@@ -1,0 +1,35 @@
+.modal {
+    overflow: hidden;
+    width: 95%;
+    //max-width: 500px;
+    // min-width:400px;
+    // width: 500px;
+    height: 300px;
+    padding: 0;
+    border-width: 0;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .3);
+    visibility: true;
+    user-select: none;
+    .close{
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+    }
+    .title{
+        height: 40px;
+        background-color: rebeccapurple;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px 5px 10px;
+    }
+    
+}
+::backdrop {
+    background: rgba(0, 0, 0, .6)
+}
+.modalanim{
+    animation: fade-in 1s, scale-zoom .3s;
+}
+
